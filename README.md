@@ -19,7 +19,7 @@ Just an improved version of the previous, but nothing really to say about this. 
 Yes, another rework done on the website, around March/April 2020. Clean and start from scratch again. This time the website really looked good, though it also took twice the time the previous version took to be developed. Furthermore, GFX and branding and advertising of the project began to be successful, some original logotypes and banners made their first appearance on what it would be GDPS Hub's true visual identity, the jumping download cube, inspired on RobTop's Geometry Dash logotype.
 Visuals on the website were more developer-friendly, consistent and closer to what they look in the actual version.
 
-### 4.0
+### 4.0 (never released)
 This version was a try of reworking some CSS code of the website, resulting in a failed attempt after almost every component from the website was broken when modified or totally washed. It took place on June 2021, entering the summer. The website was quite good, but not perfect, and Jeros still had some motivation to rework and do from scratch the website for the fifth time (LOL). Although, on this version a lot of PHP and SQL code was made, being the future base for the PHP system of the website.
 
 ### 5.0
