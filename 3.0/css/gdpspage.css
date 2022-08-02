@@ -1,0 +1,84 @@
+body {
+    background-image: url('../assets/gdps/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.gp-content {
+    background-color: rgba(10, 10, 10, 0.9);
+    padding: 20px 20px 20px 70px;
+    margin: 300px 0px 0px 0px;
+}
+
+.gp-logo {
+    border-radius: 50%;
+    margin: -150px 0px 20px 30px;
+    height: 200px;
+    border: rgba(10, 10, 10, 1) 10px solid;
+}
+
+.gp-desc {
+    background-color: rgb(50, 50, 50);
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    width: 600px;
+}
+
+.gp-links {
+    background-color: rgb(30, 30, 30);
+    padding: 20px;
+    padding-bottom: 20px;
+    padding-top: 0px;
+    border-radius: 20px;
+    font-size: 16px;
+    width: 400px;
+    float: right;
+}
+
+.gp-rating {
+    margin-top: 70px;
+}
+
+.gp-button {
+    background-color:rgb(100, 100, 100);
+    border: none !important;
+    color: white;
+    width: 380px !important;
+}
+
+.download-btn-link {background-color:rgb(56, 163, 92) !important;}
+.download-btn-link:hover {background-color:rgb(42, 119, 67) !important;}
+
+.gp-v {height: 35px;}
+.gp-auth-badge {height: 20px;}
+
+.gp-rat-num {
+    color: rgb(255, 199, 46);
+    font-size: 34px;
+}
+
+.gp-rat-outof {
+    color: rgb(200, 200, 200);
+    font-size: 28px;
+    margin-right: 10px;
+}
+
+.gp-star {
+    background-image: url('../assets/gdps/star.png');
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    margin-right: -5px;
+}
+
+.gp-halfstar {
+    background-image: url('../assets/gdps/star-half.png');
+    background-size: cover;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    margin-right: -5px;
+}

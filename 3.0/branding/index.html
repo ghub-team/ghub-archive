@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<!--
+
+Website made by GeoDash Software 2021
+Licensed under an AGPL v3 GNU license
+
+If you want to clone the website,
+go to the GitHub repo (link in the footer).
+But remember the terms in the license
+and respect them when modifying/distributing
+the copy.
+
+-->
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta property="og:site_name" content="GDPS Hub">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="GDPS Hub">
+  <meta property="og:description" content="Welcome to the official GDPS Hub server. Here you can advertise your GDPS without need of publishing in other platforms.">
+  <meta id="meta-image" property="og:image" itemprop="image" content="https://cdn.discordapp.com/attachments/839834610799607818/857226098201722891/video_si.gif">
+  <meta name="referrer" content="no-referrer">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <meta name="author" content="GeoDash Software">
+  <meta name="keywords" content="geometry,dash,gdps,advertise,advertising,gmd,gd,game,top,2.113">
+  <meta name="description" content="GDPS Hub">
+  <meta name="viewport" content="width=device-width">
+  <title>GDPS Hub</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/mobile.css">
+  <script src="Lc.js"></script>
+  <link rel="icon" href="../assets/brand-assets/logo-ico.ico">
+  <script src="../script.js"></script>
+</head>
+<body>
+  <div class="device-too-smol">
+    <h1 style="font-size: 100px;">;(</h1>
+    Sorry, but your screen resolution is too small to display the website.
+    We recommend you to zoom out or rotate your device in case you are in mobile.<br>
+    TIP: Use a screen with at least 500 pixels of width.
+  </div>
+  <div class="cookie-container">
+    <img src="assets/cookies.png" height="64px">
+    <p>This website uses cookies. By navigating and using the website means you accept them.</p>
+    <button class="cookie1">Ok, got it</button>&nbsp;&nbsp;<button class="cookie1" onclick="location.href = './tos/';">Know more</button>
+    <script src="../Lc.js"></script>
+  </div>
+  <nav>
+    <img src="../assets/brand-assets/logo.png">
+    <span></span>
+    <a href="/find/" class="nav-link">Find</a>
+    <a href="/download/" class="nav-link">Download</a>
+    <a href="/tos/" class="nav-link">Terms</a>
+    <a href="/about/" class="nav-link">About</a>
+    <a onclick="openProfile()" class="nav-link prof">Profile</a>
+  </nav>
+
+  <div id="profileBox" class="profile-box">
+    <span><h1>$username</h1></span>
+    <hr style="margin: 20px;">
+    <a href="../profile/">My Profile</a>
+    <a href="../profile/mygdps/">My GDPSes</a>
+    <hr style="margin: 20px;">
+    <h3>Badges:</h3>
+    <img src="../assets/verified.png">
+    <img src="../assets/mod.png">
+    <img src="../assets/owner.png"><p>
+    <a onclick="closeProfile()" class="red-close-text">Close popout</a>
+  </div>
+
+  <separate /><p><br></p>
+
+    <center>
+        <h1 class="title">Press Kit and Brand assets</h1>
+        <p>
+            Here you can find all the assets and graphic resources of the brand.
+            <br>Click on the images to download them.
+            <br>You cannot modify/distribute/sell these files.
+            <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a class="text-link" property="dct:title"
+                    rel="cc:attributionURL" href="https://gdpshub.com/branding">GDPS Hub Brand assets</a> by <a class="text-link"
+                    rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://gdpshub.com">GeoDash
+                    Software</a> are licensed under <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1"
+                    target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-ND 4.0<img
+                        style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                        src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img
+                        style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                        src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img
+                        style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                        src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img
+                        style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                        src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"></a>
+                </p>
+        </p>
+        <div class="brand-content">
+            <h2>Logotype</h2>
+            <a href="../assets/brand-assets/logo.png" class="brand-btn">
+                <img src="../assets/brand-assets/logo.png">
+                Original logo
+            </a>
+            <a href="../assets/brand-assets/logo-transparent.png" class="brand-btn">
+                <img src="../assets/brand-assets/logo-transparent.png">
+                Transparent logo
+            </a>
+            <a href="../assets/brand-assets/logo-minimalist.png" class="brand-btn">
+                <img src="../assets/brand-assets/logo-minimalist.png">
+                White logo
+            </a>
+        </div>
+        <div class="brand-content">
+            <h2>Banners</h2>
+            <a href="../assets/brand-assets/gdpshub-banner-release.png" class="brand-btn">
+                <img src="../assets/brand-assets/gdpshub-banner-release.png">
+                Actual banner
+            </a>
+            <a href="../assets/brand-assets/gdpshub-banner.png" class="brand-btn">
+                <img src="../assets/brand-assets/gdpshub-banner.png">
+                Gradient banner
+            </a>
+            <a href="../assets/brand-assets/gdpshub-bg.png" class="brand-btn">
+                <img src="../assets/brand-assets/gdpshub-bg.png">
+                Gradient background
+            </a>
+        </div>
+        <div class="brand-content">
+            <h2>Banners</h2>
+            <a href="../assets/brand-assets/geodash-logo-px.png" class="brand-btn">
+                <img src="../assets/brand-assets/geodash-logo-px.png">
+                GeoDash Software logo
+            </a>
+            <a href="../assets/brand-assets/gdpspress-logo.png" class="brand-btn">
+                <img src="../assets/brand-assets/gdpspress-logo.png">
+                GDPS Press logo
+            </a>
+        </div>
+    </center>
+
+  <separate /><p><br></p>
+
+  <footer>
+    <h2>Made by GeoDash Software, 2021</h2>
+    <ul>
+      <li><a href="../find/" class="text-link">Find GDPSes</a></li>
+      <li><a href="../download/" class="text-link">Download client</a></li>
+      <li><a href="../faq/" class="text-link">Frequently Asked Questions</a></li>
+      <br>
+      <li><a href="../branding/" class="text-link">Branding & Press assets</a></li>
+      <li><a href="../discord/" class="text-link">Discord server</a></li>
+      <br>
+      <li><a href="../tos/" class="text-link">Terms of Service</a></li>
+      <li><a href="../about/" class="text-link">About us</a></li>
+    </ul>
+  </footer>
+</body>
+</html>

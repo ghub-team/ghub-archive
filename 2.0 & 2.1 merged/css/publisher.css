@@ -1,0 +1,29 @@
+input, select, textarea, button {
+    font-family: '1';
+    font-size: 20px;
+    outline: none;
+    border-radius: 50px;
+    border-width: 1px;
+    border-color: black;
+    padding: 5px;
+    padding-left: 10px;
+    transition: var(--transition-speed);
+}
+
+input:focus, select:focus, textarea:focus, button:focus {
+    box-shadow: 2px 2px 10px cyan;
+    border-color: cyan;
+}
+
+label {
+    font-family: 'Bold';
+    margin-bottom: 10px;
+}
+
+textarea {
+    padding: 30px;
+}
+
+button {
+    padding: 6px;
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<!--
+
+Website made by GeoDash Software 2021
+Licensed under an AGPL v3 GNU license
+
+If you want to clone the website,
+go to the GitHub repo (link in the footer).
+But remember the terms in the license
+and respect them when modifying/distributing
+the copy.
+
+-->
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta property="og:site_name" content="GDPS Hub">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="GDPS Hub">
+  <meta property="og:description" content="Welcome to the official GDPS Hub server. Here you can advertise your GDPS without need of publishing in other platforms.">
+  <meta id="meta-image" property="og:image" itemprop="image" content="https://cdn.discordapp.com/attachments/839834610799607818/857226098201722891/video_si.gif">
+  <meta name="referrer" content="no-referrer">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <meta name="author" content="GeoDash Software">
+  <meta name="keywords" content="geometry,dash,gdps,advertise,advertising,gmd,gd,game,top,2.113">
+  <meta name="description" content="GDPS Hub">
+  <meta name="viewport" content="width=device-width">
+  <title>GDPS Hub</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mobile.css">
+  <script src="./Lc.js"></script>
+  <script src="./script.js"></script>
+  <link rel="icon" href="assets/brand-assets/logo-ico.ico">
+</head>
+<body>
+  <div class="device-too-smol">
+    <h1 style="font-size: 100px;">;(</h1>
+    Sorry, but your screen resolution is too small to display the website.
+    We recommend you to zoom out or rotate your device in case you are in mobile.<br>
+    TIP: Use a screen with at least 500 pixels of width.
+  </div>
+  <div class="cookie-container">
+    <img src="assets/cookies.png" height="64px">
+    <p>This website uses cookies. By navigating and using the website means you accept them.</p>
+    <button class="cookie1">Ok, got it</button>&nbsp;&nbsp;<button class="cookie1" onclick="location.href = './tos/';">Know more</button>
+    <script src="Lc.js"></script>
+  </div>
+  <nav>
+    <img src="assets/brand-assets/logo.png">
+    <span></span>
+    <a href="/find/" class="nav-link">Find</a>
+    <a href="/download/" class="nav-link">Download</a>
+    <a href="/tos/" class="nav-link">Terms</a>
+    <a href="/about/" class="nav-link">About</a>
+    <a onclick="openProfile()" class="nav-link prof">Profile</a>
+  </nav>
+
+  <div id="profileBox" class="profile-box">
+    <span><h1>$username</h1></span>
+    <hr style="margin: 20px;">
+    <a href="./profile/">My Profile</a>
+    <a href="./profile/mygdps/">My GDPSes</a>
+    <hr style="margin: 20px;">
+    <h3>Badges:</h3>
+    <img src="./assets/verified.png">
+    <img src="./assets/mod.png">
+    <img src="./assets/owner.png"><p>
+    <a onclick="closeProfile()" class="red-close-text">Close popout</a>
+  </div>
+
+  <div class="hero">
+    <img src="assets/brand-assets/logo-minimalist.png" height="150px" style="margin-bottom: 15px;">
+    <h1>Welcome to GDPS Hub!</h1>
+    Welcome to the first marketplace for GDPSes.<p><p><br></p></p>
+    <a href="#">Start exploring</a>
+  </div>
+
+  <div class="right-column">
+    <div class="home-banner">
+      <img src="assets/mobile-support.png" height="100px">
+      <h1>Yes! Also for you, mobile players!</h1>
+      <p>
+        We'd tailored the website also for you, mobile players. You can
+        download the Android version of every GDPS that has one, and the website
+        has also been made thinking on smaller devices, like phones or tablets
+        so it doesn't bugs.
+      </p>
+    </div>
+    
+    <div class="home-banner download-client-box">
+      <img src="assets/new.png" class="new">
+      <img src="assets/windows-app.png" height="100px" style="margin-left: -30px;">
+      <h1>New desktop client, easier to manage</h1>
+      <p>
+        With the new release of the desktop client app, you can directly manage
+        your installed GDPSes directly from the client.
+      </p>
+      <br><a href="/download/">Download the client</a>
+    </div>
+
+    <div class="home-banner">
+      <img src="assets/discord.png" height="100px">
+      <h1>Stay up to date with new changes and announcements</h1>
+      <p>
+        Join our Discord server, where you can follow up every change we
+        make in the website, and news that you might want to hear, for example,
+        mod application opens or Nitro giveaways sometimes 👀.
+      </p>
+      <br><a href="./discord/">Enter the server</a>
+    </div>
+  </div>
+
+  <div class="left-column">
+    <div class="home-banner">
+      <img src="assets/new.png" class="new">
+      <img src="assets/mod.png" height="100px" style="margin-left: -30px;">
+      <h1>We're looking for moderators in the server!</h1>
+      <p>
+        We need new staff to manage the server for us, and make this community
+        betterm, with less troubles and drama, just to put some order in the
+        server ;D
+        <br>If you want to moderate in the server,
+        <a class="text-link" href="#mod-apps#">click here.</a>
+      </p>
+    </div>
+
+    <div class="home-banner">
+      <img src="assets/download.png" height="100px">
+      <h1>Download and discover a ton&nbsp;of new GDPSes to play</h1>
+      <p>
+        GDPSes can now include secure and safe third-party software, made by
+        the GDPS owner, so they can include a modded Mega Hack or a launcher.
+      </p>
+    </div>
+    
+    <div class="home-banner">
+      <img src="assets/verified.png" height="100px">
+      <h1>Get verified and have some special perks</h1>
+      <p>
+        If you have a big GDPS with lots of members, get verified as soon as
+        possible to prevent people to steal your identity. And get some special
+        perks as a <a class="text-link" href="/faq/">custom URL.</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="end-banner">
+    <h1>Want to start discovering?</h1>
+    <a href="/find/">Click here to start</a>&nbsp;&nbsp;<a href="/discord/">Join us on Discord</a><p>
+  </div>
+
+  <footer>
+    <h2>Made by GeoDash Software, 2021</h2>
+    <ul>
+      <li><a href="/find/" class="text-link">Find GDPSes</a></li>
+      <li><a href="/download/" class="text-link">Download client</a></li>
+      <li><a href="/faq/" class="text-link">Frequently Asked Questions</a></li>
+      <br>
+      <li><a href="/branding/" class="text-link">Branding & Press assets</a></li>
+      <li><a href="/discord/" class="text-link">Discord server</a></li>
+      <br>
+      <li><a href="/tos/" class="text-link">Terms of Service</a></li>
+      <li><a href="/about/" class="text-link">About us</a></li>
+    </ul>
+  </footer>
+</body>
+</html>

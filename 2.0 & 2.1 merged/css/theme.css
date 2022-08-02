@@ -1,0 +1,33 @@
+.dark {
+--text-primary: #b6b6b6;
+--text-secondary: #ececec;
+--bg-primary: #23232e;
+--bg-secondary: #141418;
+--body-color: #fff;
+--body-bg: #141418;
+--selection: #9c91ff8f;
+--link-color: rgb(202, 231, 255);
+}
+
+.light {
+--text-primary: #1f1f1f;
+--text-secondary: #000000;
+--bg-primary: #ffffff;
+--bg-secondary: #e4e4e4;
+--body-color: #000;
+--body-bg: #eee;
+--selection: #1900ff8f;
+--link-color: rgb(0, 140, 255);
+}
+
+.theme-icon {
+display: none;
+}
+
+.dark #darkIcon {
+display: block;
+}
+
+.light #lightIcon {
+display: block;
+}

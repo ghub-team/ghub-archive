@@ -1,0 +1,88 @@
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Search | GDPS Hub</title>
+        <link rel="icon" type="image/png" sizes="16x16" href="images/search.png">
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+
+        <meta id="meta-title" property="og:title" content="GDPS Hub">
+        <meta id="meta-desc" property="og:description" content="The first marketplace for GDPS!">
+        <meta id="meta-image" name="og:image" itemprop="image" content="http://gdpshub.7m.pl/images/square-logo.png">
+
+        <style>
+          .alert {
+            padding: 20px;
+            background-color: #c4c4c4;
+            color: white;
+          }
+          
+          .closebtn {
+            margin-left: 15px;
+            color: white;
+            font-weight: bold;
+            float: right;
+            font-size: 22px;
+            line-height: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+          }
+          
+          .closebtn:hover {
+            color: black;
+          }
+          </style>
+    </head>
+
+    <body>
+    
+      <div class="header" id="myHeader" style="height: 9%;">
+        <a href="../../index.html"><img src="../../images/logo.png" alt="Error" height="55" class="img-valign" style="border-radius: 10%;"></a>
+        <input type="text" class="header-search"   placeholder="Search for a GDPS...">
+        <a href="../../user/index.html" style="float: right; text-decoration: none;"><img src="../../images/default.jpg" height="55px" style="border-radius:50%; margin-right:20px;" >Welcome $username <img src="../../images/verified.png" height="20px"></a>
+        </div>
+      </div>
+
+        <div class="alert">
+          <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+          <strong>Looks a bit lonely, right?</strong> Share the website with your friends, and let this project grow :D
+        </div>
+
+
+        <p>
+        <input type="text" id="myInput" onkeyup="myFunction()"   placeholder="Search for a GDPS...">
+        <p>
+        <ul id="myUL">
+            <li><a href="gdps/wgdps/index.html"><img src="images/gdps/wgdps.png" height="200" style="border-radius: 50%;">&nbsp;WGDPS</a></li>   <li><a href="gdps/ogdps/index.html"><img src="gdps/ogdps/assets/logo.png" height="200" style="border-radius: 50%;">&nbsp;OGDPS</a></li>   <li><a href="gdps/cycron_industries/index.html"><img src="gdps/cycron_industries/assets/logo.png" height="200" style="border-radius: 50%;">&nbsp;Cycron Industries</a></li> &nbsp;
+            <li><a href="gdps/universe_gdps/index.html"><img src="gdps/universe_gdps/assets/logo.png" height="200" style="border-radius: 50%;">&nbsp;UniverseGDPS</a></li>
+            <li><a href="gdps/vps/index.html"><img src="gdps/vps/assets/logo.png" height="200" style="border-radius: 50%;">&nbsp;VPS <img src="images/verified.png" height="20px" title="Verified server"></a></li>
+        </ul>
+
+
+
+
+
+        <!--Search system by W3schools-->
+        <script>
+            function myFunction() {
+              // Declare variables
+              var input, filter, ul, li, a, i, txtValue;
+              input = document.getElementById('myInput');
+              filter = input.value.toUpperCase();
+              ul = document.getElementById("myUL");
+              li = ul.getElementsByTagName('li');
+            
+              // Loop through all list items, and hide those who don't match the search query
+              for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                  li[i].style.display = "";
+                } else {
+                  li[i].style.display = "none";
+                }
+              }
+            }
+        </script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+/* SPECIAL MEDIA QUERIES  */
+@media only screen and (min-width: 900px) {.gp-mobile-content {display: none;}}
+@media only screen and (max-width: 1100px) {nav span {margin-right: 10vw;}.prof {margin-left: 10vw;}}
+@media only screen and (max-width: 300px) {.device-too-smol {display: initial;}nav {display: none;}}
+
+/*   MOBILE    */
+
+@media only screen and (max-width: 900px) {
+    nav img, nav span {display: none;}
+    .prof {margin-left: 0;}
+
+    .hero {
+        line-height: normal;
+        padding: 20vh 20vw 30vh 20vw;
+    }
+
+    .download-client-box {display: none !important;}
+    .pc-dwn-content {display: none;}
+    .mob-dwn-alert {display: initial;}
+    .left-column {width: 100vw;}
+    .right-column {width: 100vw;}
+    footer ul {display: none;}
+    footer h2 {color: black;}
+    .ngf-icon-upload::-webkit-file-upload-button {
+        width: 140px;
+    }
+    .ngf-icon-upload::before {
+        height: 50px;
+        width: 50px;
+    }
+    .prof-left-menu {
+        display: none;
+    }
+    .profile-box {margin-left: 37vw;}
+    .brand-content {margin: 50px;}
+
+
+    /* GDPS PAGE  */
+    .gp-logo {margin: -150px 0px 20px -40px !important;}
+    .gp-title {margin: -20px 0px 0px -30px;}
+    .gp-author {margin: -5px 0px 0px -28px;}
+    .gp-rating {margin-top: 10px !important;}
+    .gp-desc {width: 350px !important;}
+    .gp-links {padding: 30px !important;}
+    .gp-pc-content {display: none;}
+    .gp-mobile-content {display: block;}
+}

@@ -1,0 +1,551 @@
+@font-face {font-family: 'Regular';src: url('../fonts/Acumin.otf');}
+@font-face {font-family: 'Bold';src: url('../fonts/Acumin-Bold.otf');}
+@font-face {font-family: 'Italic';src: url('../fonts/Acumin-Italic.otf');}
+@font-face {font-family: 'akira';src: url('../fonts/Akira.otf');}
+
+html {
+    font-family: 'Regular';
+    background-color: rgb(10, 10, 10);
+    color: white;
+}
+
+body {
+    margin: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Bold';
+}
+
+a {
+    background-color:rgb(100, 100, 100);
+    border: none;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    transition: 300ms;
+    border-radius: 10px;
+}
+
+a:hover {
+    background-color: rgb(135, 135, 255);
+    color: white;
+}
+
+button {
+    background-color: rgb(105, 105, 105);
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    transition: 200ms;
+}
+
+button:focus {
+    background-color: rgb(135, 135, 255);
+}
+
+footer {
+    background-image: url('../assets/brand-assets/logo-footer.png');
+    background-position: right;
+    background-repeat: no-repeat;
+
+    background-color: #2672e4;
+    color: white;
+    padding: 30px;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    background-color:rgba(10, 10, 10, 0.8);
+    padding: 20px;
+    border-radius: 20px;
+    width: 330px;
+}
+
+.faq-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    background-color:rgba(88, 88, 88, 0.8);
+    padding: 20px;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    width: 90vw;
+}
+
+separate {
+    margin: 20px;
+}
+
+center {
+    text-align: center;
+}
+
+.text-link {
+    background-color: #00000000;
+    border: none;
+    padding: 0;
+    border-radius: 0;
+
+    color:rgb(135, 135, 255);
+    text-decoration: none;
+    transition: 300ms;
+}
+
+.text-link:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: hsl(240, 100%, 85%);
+    text-decoration: hsl(240, 100%, 85%) underline;
+}
+
+.cookie-container {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 20px;
+    padding: 100px;
+    position: fixed;
+
+    /* Remove this property down below when the cookie js code is fixed */
+    display: none;
+}
+
+.cookie1 {
+    border: rgb(135, 135, 255) 2px solid;
+    background-color: rgb(135, 135, 255);
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    transition: 300ms;
+    border-radius: 10px;
+}
+
+.device-too-smol {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    position: fixed;
+    display: none;
+}
+
+nav {
+    background-image: linear-gradient(to right , rgb(14, 7, 56) , black);
+    color: white;
+    width: 100vw;
+    font-family: 'Regular';
+    z-index: 99;
+    padding: 10px 0px 10px 0px;
+    margin: 0px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav img {
+    height: 28px;
+    margin-right: 10px;
+}
+
+.nav-link {
+    background-color: #00000000;
+    border: hsla(240, 100%, 50%, 0) 2px solid;
+    color:rgb(135, 135, 255);
+    padding: 5px 10px 2px 10px !important;
+    margin-right: 5px;
+
+    text-shadow: 0px 0px 13px rgb(10, 127, 196);
+} .prof {margin-left: 30vw; cursor: pointer;}
+
+.nav-link:hover {
+    background-color: rgb(135, 135, 255);
+    color: white;
+    text-shadow: 0px 0px 10px #fff;
+}
+
+nav span {
+    margin-right: 29vw;
+}
+
+.profile-box {
+    background-color: rgb(80, 80, 80);
+    margin: 30px;
+    margin-top: 60px;
+    padding: 10px;
+    border-radius: 20px;
+    height: 300px;
+    width: 200px;
+    margin-left: 80vw;
+    position: fixed;
+    display: none;
+}
+
+.profile-box img {
+    height: 40px;
+}
+
+.red-close-text {
+    cursor: pointer;
+}
+
+.red-close-text:hover {
+    background-color: rgb(255, 53, 53);
+}
+.rainbow {
+   font-family: 'Bold';
+   text-shadow: 2px 2px 10px #000000AA;
+   font-size:40px;
+}
+
+.textthing{
+    text-shadow: 2px 2px 10px #000000;
+}
+
+.hero {
+    background-image: url('../assets/bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 30vh 20vw 20vh 20vw;
+    line-height: 6px;
+    height: 50vh;
+}
+
+.hero a {
+    background-color: #00000000;
+    border: white 2px solid;
+    color: white;
+}
+
+.hero a:hover {
+    background-color: white;
+    color: rgb(135, 135, 255);
+}
+
+.left-column {
+    width: 50vw;
+}
+
+.right-column {
+    float: right;
+    width: 50vw;
+}
+
+.home-banner {
+    background-color: rgb(40, 40, 40);
+    margin: 20px;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.new {
+    height: 60px;
+    transform: translate(5px , -40px) rotateZ(-25deg);
+}
+
+.end-banner {
+    background-color: rgb(66, 66, 66);
+    text-align: center;
+    padding: 40px;
+    margin-top: 100px;
+}
+
+.title {
+    /* background-image: radial-gradient( circle , rgb(80, 80, 80) , rgba(0, 0, 0, 0)); */
+    text-shadow: 2px 2px 20px rgb(42, 177, 255);
+    padding: 20px;
+    margin: 0vh 0vw 0vh 0vw;
+}
+
+.client-img {
+    height: 400px;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+
+    box-shadow: -6px -6px 15px rgb(66, 66, 255) , 6px 6px 15px rgb(138, 124, 216);
+}
+
+.download-btn , .disgg-btn {
+    text-transform: uppercase;
+    font-family: 'Bold';
+    font-size: 16px;
+    padding: 25px;
+    margin-top: -20px;
+}
+
+.download-btn:hover {
+    background-color: rgb(85, 255, 170);
+    color: black;
+}
+
+.mob-dwn-alert {
+    display: none;
+    opacity: 0;
+}
+
+.disgg-btn:hover {
+    background-color: rgb(50, 70, 255);
+    color: white;
+}
+
+.disgg-arrow {
+    opacity: 60%;
+    transition: 150ms;
+    animation: disarrowanim 2s ease-in-out infinite;
+}
+
+.disgg-arrow:hover {
+    opacity: 100%;
+}
+
+@keyframes disarrowanim {
+    0% {transform: rotate(-90deg) translateY(100px) translateX(35px);}
+    50% {transform: rotate(-90deg) translateY(100px) translateX(15px);}
+    100% {transform: rotate(-90deg) translateY(100px) translateX(35px);}
+}
+
+.search-bar {
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    outline: none;
+}
+
+.gdps-container {
+    width: 1000px;
+    margin-left: 11.5vw;
+    margin-top: 60px;
+}
+
+.gdps-box {
+    background-color: rgb(80, 80, 80);
+    border-radius: 20px;
+    width: 320px;
+    height: 300px;
+    display: inline-table;
+    margin-bottom: 25px;
+
+}
+
+.gdps-box-pinned {
+    background-color: rgb(80, 80, 80);
+    border-radius: 20px;
+    width: 500px;
+    height: 100px;
+    display: inline-table;
+    margin-bottom: 25px;
+
+}
+
+
+.gdps-banner {
+    height: 100px;
+    width: 320px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.gdps-pic {
+    margin-left: 20px;
+    height: 80px;
+    margin-top: -55px;
+    border-radius: 30px;
+}
+
+.verified {
+    height: 25px;
+}
+
+.gdps-name {
+    font-size: 18px;
+    font-family: 'Bold';
+}
+
+.gdps-desc {
+    margin: 5px 10px 5px 10px;
+}
+
+.gdps-link {
+    margin-left: 10px;
+    background-color: rgb(124, 124, 124) !important;
+    color: white !important;
+    border: none;
+}
+
+.gdps-discord {
+    margin-left: 10px;
+    background-color: #5865F2 !important;
+    color: white !important;
+    border: none;
+}
+
+.gdps-delete {
+    margin-left: 10px;
+    background-color: #f72525 !important;
+    color: white !important;
+    border: none;
+}
+
+.user-name {
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Bold';
+}
+
+.user-box {
+    background-color: rgb(80, 80, 80);
+    border-radius: 20px;
+    width: 200px;
+    height: 100px;
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 20px;
+}
+
+.user-box img {
+    height: 50px;
+}
+
+.prof-left-menu {
+    float: left;
+    width: 20vw;
+    padding: 30px;
+}
+
+.prof-left-menu a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prof-left-menu a:hover {
+    background-color: rgb(124, 124, 124);
+}
+
+.prof-right-content {
+    float: right;
+    width: 66vw;
+    padding: 30px;
+}
+
+.prof-right-content ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.prof-end-margin {
+    margin-bottom: 1000px;
+}
+
+.soon-tm {
+    padding: 5px;
+    background-color: rgb(160, 160, 160);
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-family: 'Bold';
+    font-size: 11px;
+    margin-left: 10px;
+}
+
+.new-gdps-div {
+    margin-top: 100px;
+    position: absolute;
+}
+
+.ngf-short-text {
+    background-color: #000;
+    border-radius: 0px;
+    color: white;
+    padding: 5px;
+    border: none;
+    border-bottom: 2px solid rgb(37, 132, 255);
+    margin-bottom: 5px;
+    outline: none;
+    transition: 200ms;
+    width: 300px;
+    font-size: 16px;
+}
+
+.ngf-short-text:focus {
+    border-bottom: 2px solid hsl(214, 100%, 75%);
+}
+
+.ngf-desc {
+    width: 300px;
+    height: 100px;
+    font-family: 'Regular';
+}
+
+.ngf-icon-upload::-webkit-file-upload-button {
+    visibility: hidden;
+    width: 600px;
+}
+
+.ngf-icon-upload::before {
+    content: 'Upload icon and banner*';
+    float: right;
+    margin: 0px 200px 0px 0px;
+    background-image: url(../assets/newicon.png);
+    background-position: center;
+    background-size: cover;
+    padding: 30px;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    -webkit-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ngf-checkbox {
+    height: 30px;
+    width: 30px;
+   transform: translateY(18px);
+}
+
+.ngf-required {
+    text-transform: uppercase;
+    color: rgb(255, 132, 132);
+    font-size: 11px;
+}
+
+.brand-content {
+    margin: 50px 350px 50px 350px;
+    padding: 40px;
+    background-color: rgb(112, 112, 112);
+    color: white;
+    border-radius: 20px;
+}
+
+.brand-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand-btn img {
+    height: 60px;
+    margin-right: 20px;
+}

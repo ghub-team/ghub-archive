@@ -1,0 +1,7 @@
+ErrorDocument 404 ./404.html
+ErrorDocument 403 ./403.html
+
+# Redirect /http://www. nuevo-dominio.tld/
+
+Order deny,allow 
+Deny from 92.177.1.193

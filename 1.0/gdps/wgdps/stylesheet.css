@@ -1,0 +1,332 @@
+/*          FONT STYLE            */
+
+@font-face {
+	font-family: '1';
+    src: url("http://gdpshub.7m.pl/fonts/KumbhSans-Light.ttf");
+}
+
+@font-face {
+    font-family: '2';
+    src: url("http://gdpshub.7m.pl/fonts/KumbhSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: '3';
+    src: url("http://gdpshub.7m.pl/fonts/KumbhSans-Bold.ttf");
+}
+
+body {
+	font-family: '2';
+	font-size: 16px;
+    line-height: 1.5;
+    background-color: #242424;
+}
+
+.img-valign {
+    vertical-align: middle;
+    margin-bottom: 0.75em;
+    float: left;
+  }
+
+
+/* Style the header */
+.header {
+    padding: 10px 16px;
+    background: #555;
+    color: #f1f1f1;
+    align-content: center;
+    margin-right: 10px;
+  }
+  
+  /* Page content */
+  .content {
+    padding: 16px;
+  }
+  
+  /* The sticky class is added to the header with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 96%
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 102px;
+  }
+
+
+
+
+
+.hometitle {
+    color: rgb(255, 255, 255);
+    font-size: 80px;
+	font-family: '3';
+    margin-left: 30;
+    text-align: left;
+}
+
+.homesubtitle {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+	font-family: '2';
+    margin-left: 30;
+    text-align: left;
+}
+
+.hometext {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+	font-family: '1';
+    margin-left: 80;
+    margin-right: 80;
+    text-align: left;
+}
+
+p.info {
+    border-left-style: solid;
+    border-width: 10;
+    border-left-color: #ff7b2e;
+    background-color: #af4000;
+    color: #ffffff;
+    margin-left: 30;
+    margin-right: 30;
+    height: 20;
+    padding: 30px
+}
+
+.headerbutton {
+    background-color: #4caf4f00; /* Green */
+    border: white;
+    border-radius: 30px;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: 3;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+
+.headerbutton:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+  
+.headerbutton0 {
+    background-color: #0066ff00; 
+    color: rgb(255, 255, 255); 
+    border: 2px solid #929292;
+}
+  
+.headerbutton0:hover {
+    background-color: #929292;
+    color: white;
+}
+
+.headerbutton1 {
+    background-color: rgba(255, 255, 255, 0); 
+    color: rgb(255, 255, 255); 
+    border: 2px solid #00ffea;
+}
+
+
+  
+.headerbutton1:hover {
+    background-color: #00ffea;
+    color: white;
+}
+
+.headerbutton2 {
+    background-color: rgba(255, 255, 255, 0); 
+    color: rgb(255, 255, 255); 
+    border: 2px solid #00d9ff;
+}
+  
+.headerbutton2:hover {
+    background-color: #00d9ff;
+    color: white;
+}
+
+.headerbutton3 {
+    background-color: #0066ff00; 
+    color: rgb(255, 255, 255); 
+    border: 2px solid #0077ff;
+}
+  
+.headerbutton3:hover {
+    background-color: #0077ff;
+    color: white;
+}
+
+.headerbutton4 {
+    background-color: #0066ff00; 
+    color: rgb(255, 255, 255); 
+    border: 2px solid #1900ff;
+}
+  
+.headerbutton4:hover {
+    background-color: #1900ff;
+    color: white;
+}
+
+.storebutton {
+    background-color: #6fff74; /* Green */
+    border: white;
+    border-radius: 10px;
+    color: rgb(70, 70, 70);
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    font-family: 3;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-right: 12px;
+}
+
+.storediscord {
+    background-color: #262af8; /* Green */
+    border: white;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-family: 3;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-right: 12px;
+}
+
+.storeextlink {
+    background-color: #bbbbbb; /* Green */
+    border: white;
+    border-radius: 10px;
+    color: rgb(43, 43, 43);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-family: 3;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-right: 12px;
+}
+
+.storelauncher {
+    background-color: #6fff74; /* Green */
+    border: white;
+    border-radius: 10px;
+    color: rgb(43, 43, 43);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-family: 3;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-right: 12px;
+}
+
+.badge-100 {
+    color: #00ff00;
+    border: #00ff00;
+    border-style: solid;
+    border-radius: 10px;
+    padding-left: 10%;
+    box-sizing: content-box;
+}
+
+
+th {
+    background-color: #8899fa;
+    color: rgb(87, 87, 87);
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    color: #ffffff;
+}
+
+
+
+
+a:link {
+    color: #a1ffe8;
+}
+
+link {
+    color: #b1b1b1;
+}
+
+
+footer {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: '2';
+    padding: 30px;
+    text-align: center;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+
+
+/*                           SEARCH SYSTEM                               */
+
+#myInput {
+    background-image: url('/images/search.png'); /* Add a search icon to input */
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    background-color: #242424;
+    width: 95%; /* Full-width */
+    font-size: 60px; /* Increase font-size */
+    font-family: 2;
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border-bottom: 5px solid rgb(0, 174, 255); /* Add a grey border */
+    border-right: 5px solid #242424;
+    margin-bottom: 12px; /* Add some space below the input */
+    margin-left: 30px;
+    margin-right: 30px;
+}
+  
+#myUL {
+    /* Remove default list styling */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+  
+#myUL li a {
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    background-color: #000000;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    float: left;
+    margin-right: 10px;
+}
+
+#myUL li a:hover:not(.header) {
+    background-color: rgb(34, 113, 145);
+}
