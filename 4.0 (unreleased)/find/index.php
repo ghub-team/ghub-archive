@@ -133,7 +133,6 @@ the copy.
 
     </div>
     */
-                                    $con = mysqli_connect("sql2.7m.pl","blazen1_gdpshub3","gk2d5vpiyuav2qcw","blazen1_gdpshub3");
 
                                     if(isset($_GET['search']))
                                     {
